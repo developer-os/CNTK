@@ -440,7 +440,10 @@ namespace ONNX
         { L"Sequence::Softmax",{ {
             { L"Sequence::Softmax", "Softmax" },
         } } },
-
+        { L"Crop", { {
+            { L"Crop", "Crop"},
+            { L"offset", "border"},
+        } } },
         
     };
 
@@ -582,6 +585,7 @@ namespace ONNX
             { "LRN" },
             { "MeanVarianceNormalization" },
             { "ImageScaler" },
+            { "Crop" },
         };
 
     }
